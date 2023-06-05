@@ -33,7 +33,7 @@ public void launchBrowser() throws IOException {
 	driver.manage().window().maximize();
 }
 
-@Test(groups = { "sanity" }, dataProvider = "usersData")
+@Test(groups = { "sany" }, dataProvider = "usersData")
 public void verifyImageIsOnHomePage(String uname, String pass) {
 	WebElement userName = driver.findElement(By.xpath("//input[@name='userName']"));
 	WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
